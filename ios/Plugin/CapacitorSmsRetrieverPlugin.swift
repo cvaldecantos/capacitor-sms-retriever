@@ -75,7 +75,7 @@ class PinViewController: UIViewController, KAPinFieldDelegate {
       print("didFinishWith : \(code)")
         pinCodeTextField.animateSuccess(with: "✔️") {
         }
-        returnCall.success(["code":code])
+        returnCall.resolve(["code":code])
         self.dismiss(animated: true) {
             
         }
